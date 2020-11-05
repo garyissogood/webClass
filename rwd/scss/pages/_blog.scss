@@ -1,0 +1,226 @@
+.blog{
+  padding-bottom: 250px;
+  @include rwd-pad{ 
+    padding-bottom: 15%;         
+  }
+  
+  @include rwd-mobile{ 
+      
+  }
+
+  nav{
+    background: $color-text;
+    ul{
+      max-width: 1110px; margin:0 auto; height: 54px;
+      @extend %fjcsb; align-items: center;
+      a{ font:$font-zh-b-S; color:$color-w; margin-right: 28px;
+        &:hover{ color:$color-o;
+          img{ opacity:.5;}
+        }
+      }
+    }
+    @include rwd-pad{ 
+      ul{
+        width: 98%; padding-left: 5%;
+      }      
+    }
+    
+    @include rwd-mobile{ 
+      display: none; 
+    }
+  }
+
+  .blog__box{
+    @extend %fjcsb; margin:8% 0;
+    .blog__img{ 
+      width: 60%;
+      img{display: block;}
+      a:hover{ opacity:.7 }
+    }
+    .blog__text{
+      width: 40%;
+      h3{ font:$font-zh-L-tilte;color:$color-main; }
+      .sub{@extend %fjcsb;
+        p{ font:$font-en-b-S;}
+        time{ font:$font-en-XS; }
+      }
+      .text{
+        font:$font-zh-S; margin:3% 0;
+        .link{ text-align: right; display: block;
+          a{ font: $font-en-b-L; color:$color-text;
+            &:hover{ color:$color-main;}
+          }
+        }
+      }
+      
+    }
+    @include rwd-pad{ 
+      margin:8% 5%;  
+      .blog__img{ width: 55%;} 
+      .blog__text{
+        width: 40%;
+        h3{ font:$font-zh-M; }
+        .sub{
+          p{ font:$font-en-XXS; font-weight: bold;}
+          time{ font:$font-en-XXS; }
+        }
+        .text{
+          font:$font-zh-XXS; margin:3% 0 0;
+          .link{ text-align: left; display: inline-block;
+            a{ font: $font-en-XXS; color:$color-bk;}
+          }
+        }
+        
+      }  
+    }
+    
+    @include rwd-mobile{ 
+      flex-wrap: wrap;
+      .blog__img{ width:100%;} 
+      .blog__text{
+        width: 100%;
+        h3{ font:$font-zh-b-S;margin-top: 5px; }
+        .text{ display: none;}
+      }  
+    }
+  }
+
+
+  .detail{
+    @extend %fjcsb; flex-wrap: wrap;
+
+    @include rwd-pad{ 
+      padding: 0 5%;
+    }
+
+    .detail__text{ 
+      width: 65%;
+      .detail__text--tag{
+        a{
+          font:$font-en-b-M; color:$color-main;
+          margin-right: 10px;
+          &:hover{
+            color:$color-b;
+          }
+        }
+      }
+      h3{ font:$font-zh-XL}
+      .detail__text--sub{
+        @extend %fjcsb; margin-bottom: 2%;
+        p{ font:$font-en-b-S; }
+        time{ font:$font-en-XS;color:$color-gyb; }
+      }
+      .detail__text--content{
+        img{ display: block;}
+        p{ margin: 5% 0;font:$font-zh-S;}
+      } 
+      
+      @include rwd-pad{ 
+        .detail__text--tag{
+          a{
+            font:$font-en-b-XS;
+          }
+        }
+        h3{ font:$font-zh-L}
+        .detail__text--sub{
+          margin-bottom: 2%;
+          p{ font:$font-en-XS;}
+          time{ font:$font-en-XXS; }
+        }
+        .detail__text--content{
+          p{ margin: 5% 0;font:$font-zh-XS;}
+        } 
+      }
+      
+      @include rwd-mobile{ 
+        width: 100%;   
+      }
+    }
+
+
+    .detail__tag{ 
+      width: 30%; 
+      h4{
+        font:$font-en-L-tag; color:$color-main;
+        padding-left: 55px;
+        background: url("../images/icon-tag.svg") no-repeat 0 -2px;
+      }
+      a{
+        font:$font-en-b-M; color:$color-main;
+        margin-right: 10px;
+        &:hover{
+          color:$color-b;
+        }
+      }
+
+      @include rwd-pad{ 
+        h4{ 
+          font:$font-en-b-M; 
+          padding-left: 40px;
+          background: url("../images/icon-tag.svg") no-repeat 0 -1px;
+          background-size: 36px;
+        }
+        a{ font:$font-en-b-XS; margin-right: 5px;}
+      }
+      
+      @include rwd-mobile{ 
+        width: 100%;   
+      }
+    }
+
+    .detail__other{ 
+      width: 65%; margin-top: 5%;       
+      span{
+        font:$font-en-S;
+        a{ margin: 0 5px;
+          &:hover{ opacity: .6 ;}
+        }
+      }        
+      ul{
+        @extend %fjcsb; border-top: 1px solid $color-bk;
+        padding-top: 10px; margin-top: 5px;
+        a{ font:$font-zh-b-XS; color:$color-bk;
+          &:hover{ color:$color-main;
+            img{opacity: .3 ;}
+          }
+        }
+      }
+
+      @include rwd-pad{ 
+        width: 100%; 
+        span{ font:$font-en-b-S;}
+        ul{
+          a{ font:$font-zh-XXS;}
+        }
+      }
+      
+      @include rwd-mobile{ 
+        span{ font:$font-en-XS;         
+            img{ width:20px}
+        }
+        ul{
+          display: block;
+          a{
+            display: flex; align-items: center;
+            font:$font-zh-XXS;
+            img{ width:20px; margin-right: 5px;}
+          }
+          li{margin-bottom: 10px;}
+          li:last-child a{
+            flex-direction: row-reverse;
+            justify-content:flex-end;
+          }
+        }  
+      }
+    }
+
+
+
+  }
+
+
+
+
+
+
+}

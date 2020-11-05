@@ -1,0 +1,32 @@
+.container { max-width:1100px; margin:0px auto;}
+
+.pagination{
+  @extend %fjcc;
+  li{
+    a{
+      padding: 10px 15px;
+      border: 1px solid $color-gyb;
+      color: $color-bk;        
+      &.over{
+        background: $color-gy;
+      }
+      &:hover,&.on{
+        color: $color-w;
+        background: $color-bk;
+      }
+    }
+  }
+}
+
+.route{
+  font: $font-zh-XS; display: block; margin:10px 0;
+  a{ color: $color-main; }
+}
+
+@include rwd-pad{ 
+  .route{  padding: 0 5% }         
+}
+
+@include rwd-mobile{ 
+    
+}

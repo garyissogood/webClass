@@ -1,0 +1,199 @@
+.store{
+  padding-bottom: 250px;
+  @include rwd-pad{ 
+    padding-bottom: 15%;        
+  }
+  
+
+  .store__banner{
+    background: url("../images/qa.png") no-repeat bottom center;
+    .container{
+      position: relative; height: 304px;
+    }
+    span{
+      background: url("../images/icon-location.svg") no-repeat right center;
+      font: $font-zh-XXL;
+      padding-right: 64px;
+      position: absolute; bottom: 0;
+    }
+    @include rwd-pad{ 
+      background: url("../images/qa.png") no-repeat 30% 0;
+      span{  
+        left: -2%;       
+        transform:scale(.75)        
+      }      
+    }
+    
+    @include rwd-mobile{ 
+      background: url("../images/qa.png") no-repeat 30% 50%;
+      background-size: cover;
+      .container{
+        position: relative; height: 143px;
+      }
+      span{    
+        left: -15%;  bottom: -10%;   
+        transform:scale(.5)        
+      }   
+    }
+  }
+
+  .area{
+    margin: 3% 0;
+    span,select{ @extend %dvc}
+    span{font: $font-zh-M; margin-right: 10px;}
+    select{ 
+      padding:2px 10px;font: $font-zh-S; width: 324px;
+    }
+
+    @include rwd-pad{ 
+      margin: 3% ;
+      select{ 
+        padding:2px 5px;font: $font-zh-S; width: 50%;
+      }      
+    }
+    
+    @include rwd-mobile{ 
+      margin: 3% 4.5%;
+      span{font: $font-zh-b-XS; margin-right: 10px;} 
+      select{ 
+        font: $font-zh-XS; width: 40%;
+      } 
+    }
+  }
+
+
+
+
+
+  .store__box{ 
+    width: calc(33.33% - 15px); margin-bottom: 5%;
+    border: 1px solid #999;
+    .img img{ display: block; height:224px; width: 100%;}
+    
+    .name{ 
+      margin: 5px 0; font: $font-zh-M; 
+      padding: 1% 5%; display: block;
+    }
+    .info{   padding: 5%; border-top: 1px solid #999;
+      li{ 
+        padding-left: 40px;
+        margin-bottom: 12px;font: $font-zh-S;
+        &:nth-child(1){ 
+          background: url("../images/icon-phone-black.svg") no-repeat 0 4px;
+        }
+        &:nth-child(2){ 
+          background: url("../images/icon-clock-black.svg") no-repeat 0 4px;
+        }
+        &:nth-child(3){ 
+          background: url("../images/icon-map.svg") no-repeat 2px 4px;
+        }
+      }
+    }
+    .link{
+      display: block; background: #000; color: $color-w;
+      text-align: center; padding: 20px;
+      &:hover{
+        background: $color-main;
+      }
+    }
+    
+    @include rwd-pad{ 
+      width: calc(50% - 15px); 
+      .img img{ height:auto; }
+      .name{ 
+        font: $font-zh-b-XS;
+      } 
+      .info{   padding: 5%; border-top: 1px solid #999;
+        li{ 
+          padding-left: 30px;
+          margin-bottom: 8px;
+          font: $font-zh-XS;
+          &:nth-child(1){ 
+            background-size: 20px;
+          }
+          &:nth-child(2){ 
+            background-size: 18px;
+          }
+          &:nth-child(3){ 
+            background-size: 15px;
+          }
+        }
+      } 
+      .link{ font: $font-zh-XXS;padding: 16px;}   
+    }
+    
+    @include rwd-mobile{ 
+      width: 100%;  
+    }
+  }
+
+
+  .store__list{
+    @extend %fjcsb; 
+    flex-wrap: wrap;
+
+    .store__box:last-child{
+      margin-left: 20px;
+      margin-right: auto;
+    }     
+    
+    @include rwd-pad{ 
+      padding: 0 3%;
+      .store__box:last-child{
+        margin-left: 0;
+      }       
+    }
+    
+    @include rwd-mobile{ 
+      padding: 0 5%;  
+    }
+  }
+
+  .detail__list{
+    @extend %fjcsb; 
+    .store__box{ 
+      width: 50%; margin-bottom:0
+    }
+    .store__map{ 
+      width: 50%; margin-left: 30px;
+      iframe{ width: 100%; height: 100%;}
+    } 
+    
+    @include rwd-pad{ 
+      flex-wrap: wrap; padding: 0 3%;
+      .store__box{ 
+        width: 100%; margin-bottom:5%;
+        border:none;
+        display: flex; justify-content: space-between;
+        .img{ width: 50%;}
+        .box--info{ 
+          width:50%; margin-left: 30px;
+          border: 1px solid #999;
+        }
+      }
+      .store__map{ 
+        width: 100%; margin-left: 0; height: 465px; 
+      }     
+    }
+    
+    @include rwd-mobile{ 
+      width: 100%; 
+      .store__box{ 
+       
+        border:none;
+        display: block;
+        .img{ width: 100%;}
+        .box--info{ 
+          width:100%; margin-left: 0;
+          border: 1px solid #999;
+        }
+      }
+      .store__map{ 
+        height: 227px; 
+      } 
+    }   
+  }
+
+
+
+}
