@@ -1,0 +1,121 @@
+footer{
+  background-color: $color-main; color: $color-w; 
+  padding: 36px 0 24px 0;  position: relative;
+  a{
+    color: $color-w;
+    &:hover{ opacity:.7 }
+  }
+  hr{
+    border:none; border-top: 1px solid #fff; margin-bottom: 24px ;
+  }
+  
+  .footer__list{
+    display: flex; justify-content: space-between;
+    &:nth-last-of-type(1){ align-items: center; }
+  }
+
+  .footer__list__info{ width: 60%; 
+    .list{ 
+      margin-bottom: 32px;
+      li{ 
+        display: inline-block; 
+        margin-right: 7%;
+        font: $font-zh-b-XS;
+        a{display: block; padding: 2px;}
+        &:last-child{ margin-right: none;}
+      }
+    }
+    .data{
+      font: $font-en-L; display: block; margin-bottom: 20px;
+      img,a{ display: inline-block; vertical-align: middle;}
+      img{ width: 44px; margin-right: 14px;}
+    }  
+  }  
+
+  .footer__list__social{
+    width: 40%; text-align: right;
+    a{ margin-left: 10%;
+      &:first-child{ margin-left: none;}
+    }
+  }
+
+  .footer__list__copyright{
+    img,span{ display: inline-block; vertical-align: middle;}
+    span{margin-left: 38px; font: $font-en-XS;}
+  }
+
+  .footer__list__policy{
+    font: $font-zh-XXS; width: 40%; text-align: right;
+    a{ margin-left: 20%; display: inline-block;
+      &:first-child{ margin-left: none;}
+    }
+  }
+
+  @include rwd-pad{ 
+    padding: 36px 5% 24px ;
+
+    .footer__list__info{ 
+      .list{ 
+        li{ margin-right: 5%;}
+      }
+      .data{
+        font: $font-en-S; 
+        img{ width: 24px; }
+      }  
+    } 
+
+    .footer__list__social{
+      
+      a{ 
+        img{ width: 24px;}
+      }
+    }
+    
+    .footer__list__copyright{
+      img{ display: none; }
+      span{margin-left: 0px;}
+    }
+
+    .footer__list__policy{
+      a{ margin-left: 6%;}
+    }
+
+	}
+
+	@include rwd-mobile{ 
+    padding: 24px 5% ;
+
+    .footer__list{
+      &:nth-last-of-type(1){ display: block; }
+    }
+
+    .footer__list__info{ 
+      .list{ display: none; }
+      .data{
+        font: $font-en-XS;  margin-bottom: 7px;
+        img{ width: 16px; margin-right: 10px;}
+      }  
+    } 
+
+    .footer__list__social{
+      a{ 
+        img{ width: 24px;}
+      }
+    }
+    
+    .footer__list__copyright{
+      margin-bottom: 7px;
+      img{ 
+        display: block; position: absolute;
+        right: 5%; bottom: 24px;
+        width: 46px;
+      }      
+    }
+
+    .footer__list__policy{
+      text-align: left;
+      a{ margin-left: 0%; margin-bottom: 7px;}
+    }
+
+  }
+}

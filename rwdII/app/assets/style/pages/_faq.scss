@@ -1,0 +1,63 @@
+.faq {
+  padding-bottom: 250px;
+  
+
+  .faq__banner{
+    background: url("../images/qa.png") no-repeat bottom center;
+    background-size: cover;
+    .container{
+      position: relative; height: 304px;
+    }
+    h3{
+      background: url("../images/icon-help.svg") no-repeat right center;
+      font: $font-zh-XXL;
+      padding-right: 64px;
+      position: absolute; bottom: 0;
+    }
+
+    @include rwd-pad{ 
+      background: url("../images/qa.png") no-repeat 30% 0;
+      h3{  
+        left: -2%;       
+        transform:scale(.75)        
+      }      
+    }
+    
+    @include rwd-mobile{ 
+      background: url("../images/qa.png") no-repeat 30% 50%;
+      .container{
+        position: relative; height: 143px;
+      }
+      h3{    
+        left: -15%;  bottom: -10%;   
+        transform:scale(.5)        
+      }   
+    }
+  }
+
+  h4 { font:$font-zh-L-tilte; margin: 80px 0 36px;}
+
+  dl{    
+    dt{ font:$font-zh-b-S; margin-bottom: 1%; }
+    dd{ font:$font-zh-S; padding-left: 10%; margin-bottom: 5%;}
+  }
+
+
+  @include rwd-pad{ 
+    padding-bottom: 15%; 
+    h3 { margin: 80px 4% 36px;}  
+    dl{ padding: 0 4%;
+      dt{  margin-bottom: 2%; }
+      dd{ padding-left: 8%; margin-bottom: 8%;}
+    }     
+  }
+
+  @include rwd-mobile{ 
+    h3 { font:$font-zh-b-S; margin:5% 4% ;}
+    dl{    
+      dt{ font:$font-zh-b-XS; margin-bottom: 2%; }
+      dd{ font:$font-zh-XS; padding-left:0; margin-bottom: 10%;}
+    }
+  }
+  
+}

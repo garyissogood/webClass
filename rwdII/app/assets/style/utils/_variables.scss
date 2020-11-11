@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Roboto:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&display=swap');
+
+$base-font-size:	16px;
+$base-font-color:	#555;
+$base-line-height: 	24px;
+$base-font-style:	'Roboto','Noto Sans TC',Arial,"微軟正黑體","Microsoft JhengHei", sans-serif;
+
+$font-zh-XXL: bold 64px/96px Noto Sans;
+$font-zh-XL: bold 48px/72px Noto Sans;
+$font-zh-L: bold 36px/54px Noto Sans;
+$font-zh-L-tilte: bold 32px/48px Noto Sans;
+$font-zh-M: bold 24px/36px Noto Sans;
+$font-zh-b-S: bold 20px/30px Noto Sans;
+$font-zh-S: 20px/30px Noto Sans;
+$font-zh-XS: 16px/24px Noto Sans;
+$font-zh-b-XS: bold 16px/24px Noto Sans;
+$font-zh-XXS: 14px/21px Noto Sans;
+
+$font-en-XL: bold 72px/108px Roboto;
+$font-en-i-L: italic normal 900 48px/72px Roboto;
+$font-en-L-nav: bold 42px/63px Roboto;
+$font-en-b-L: bold 36px/54px Roboto;
+$font-en-L: 36px/54px Roboto;
+$font-en-L-tag: bold 28px/42px Roboto;
+$font-en-i-M: italic normal 900 28px/42px Roboto;
+$font-en-b-M: bold 24px/36px Roboto;
+$font-en-M: 24px/36px Roboto;
+$font-en-S: 20px/30px Roboto;
+$font-en-b-S: bold 20px/30px Roboto;
+$font-en-b-XS: bold 16px/36px Roboto;
+$font-en-XS: 16px/24px Roboto;
+$font-en-XXS: 14px/19px Roboto;
+
+$color-main:#AA0601;
+$color-text:#650300;
+$color-b:#06C;
+$color-o:#ff5a00;
+$color-g:#393;
+$color-p: rgba(170, 6, 1, 0.05);
+$color-br:#963;
+$color-bk:#000;
+$color-gyb:#666;
+$color-gy:#f2f2f2;
+$color-w:#fff;
+
+$pc-big: 1920px;
+$pc: 1600px;
+$nb: 1366px;
+$nb-s: 1365px;
+$mac-b:1281px;
+$mac: 1280px;
+$mac-s: 1279px;
+$normal-b: 1025px;
+$normal: 1024px;
+$normal-s: 1023px;
+$pad-b: 769px;
+$pad: 768px;
+$pad-s: 767px;
+$mobile-big-b: 641px;
+$mobile-big: 640px;
+$mobile-big-s: 639px;
+$mobile-b: 481px;
+$mobile: 480px;
+$phonePlus:414px;
+$phoneX:375px;
+$phoneSe:320px;
+
+
+
+// 手機
+// 320×568 (16:9)
+// 360×640 (16:9)
+// 375×667 (16:9)
+// 414×736 (16:9)
+// 768×1024 (4:3)
+// 768×1366 (16:9)
+// 900×1440 (16:10)
+// 1080×1920 (16:9)
+// -----------------
+// 平板
+// 600×960 (16:10)
+// 600×1024 (10:6)
+// 768×1024 (4:3)
+// 800×1280 (16:10)
+// 1080×1920 (16:9)
+// -----------------
+// 桌機
+// 1024×768 (4:3)
+// 1280×1024 (10:8)
+// 1366×768 (16:9)
+// 1440×900 (16:10)
+// 1600×900 (16:9)
+// 1920×1080 (16:9)
