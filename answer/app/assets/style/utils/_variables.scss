@@ -1,0 +1,107 @@
+
+// 字體
+$font-family:	'Lato', sans-serif, 'Roboto Mono', monospace;
+
+$font-size:(
+    xl: 24px,
+    lg: 20px,
+    md: 16px,
+    sm: 14px,
+    xs: 12px
+);
+
+$font-weight:(
+    nr: normal,
+    bl: bold,
+    it: italic,
+);
+
+$font-line-height:(
+    xl: 36px,
+    lg: 33px,
+    md: 24px,
+    sm: 21px,
+    xs: 19px
+);
+
+
+// 顏色
+$color-group:(
+  'primary': #2A8356,
+  'secondary': #EDF4EE,
+  'third': #CDDDCD,
+  'dark':#121212,
+  'black':#000000,
+  'white':#ffffff,
+  'warning':'#e83e8c',
+  'danger':#dc3545,
+  'success':#28a745,
+  'info':#17a2b8,
+  'tip':#707070
+);
+
+
+
+
+// 斷點
+$breakpoints:(
+    xxs: 320px, 
+    xs : 576px, 
+    sm : 768px,
+    md : 992px,
+    lg : 1200px,
+    xl : 1400px,
+);
+
+
+
+$pc-big: 1920px;
+$pc: 1600px;
+$nb: 1366px;
+$nb-s: 1365px;
+$mac-b:1281px;
+$mac: 1280px;
+$mac-s: 1279px;
+$normal-b: 1025px;
+$normal: 1024px;
+$normal-s: 1023px;
+$pad-b: 769px;
+$pad: 768px;
+$pad-s: 767px;
+$mobile-big-b: 641px;
+$mobile-big: 640px;
+$mobile-big-s: 639px;
+$mobile-b: 481px;
+$mobile: 480px;
+$phonePlus:414px;
+$phoneX:375px;
+$phoneSe:320px;
+
+
+
+// 手機
+// 320×568 (16:9)
+// 360×640 (16:9)
+// 375×667 (16:9)
+// 414×736 (16:9)
+// 768×1024 (4:3)
+// 768×1366 (16:9)
+// 900×1440 (16:10)
+// 1080×1920 (16:9)
+// -----------------
+// 平板
+// 600×960 (16:10)
+// 600×1024 (10:6)
+// 768×1024 (4:3)
+// 800×1280 (16:10)
+// 1080×1920 (16:9)
+// -----------------
+// 桌機
+// 1024×768 (4:3)
+// 1280×1024 (10:8)
+// 1366×768 (16:9)
+// 1440×900 (16:10)
+// 1600×900 (16:9)
+// 1920×1080 (16:9)
+
+

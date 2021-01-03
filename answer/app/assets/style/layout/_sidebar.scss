@@ -1,0 +1,39 @@
+.sidebar{
+  height: 100vh;
+  transition: .3s;
+
+  .logo{
+    margin-bottom: 32px;
+  }
+
+  li{
+    a{
+      &:before{
+        content:'';
+        display:block;
+        border-left: 4px solid map-get($color-group,'secondary');
+        width: 4px;
+        height: 32px;
+        position:absolute;
+        left: 0;
+        transition:.3s;
+        @include media-max(md){
+            display: none;
+        }
+      }
+      &:hover{
+        &:before{
+          border-left: 4px solid map-get($color-group,'primary');
+        }
+      }
+      &.active{
+        color: map-get($color-group,'primary');
+        &:before{
+          border-left: 4px solid map-get($color-group,'primary');
+        }
+      }
+    }
+  }
+
+}
+
