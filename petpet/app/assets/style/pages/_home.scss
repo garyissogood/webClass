@@ -1,0 +1,16 @@
+.banner-content {
+    height: auto;
+
+    @include media-min(lg) {
+        height: 736px;
+    }
+}
+
+.statistic-list {
+    height: 120px;
+    border-width: 2px !important;
+
+    @include media-min(md) {
+        height: 212px;
+    }
+}

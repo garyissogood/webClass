@@ -1,0 +1,18 @@
+.navbar {
+  z-index: 999;
+  transition: .5s;
+}
+
+a.text-logo {
+  font-family: 'Baloo Thambi 2', cursive;
+    
+    &:hover {
+        color: $logo !important;
+    }
+}
+
+
+
+
+
+
