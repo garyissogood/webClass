@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>D'Perfume | 產品列表</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Source+Sans+Pro&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css"/>
+  <link rel="stylesheet" href="./assets/style/main.css">
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-md navbar-light p-0 py-md-2 sticky-top">
+  <div class="container-fluid container-md">
+    <h1>
+      <a class="navbar-brand logo ml-4 ml-lg-0 text-hide" href="index.html">D'PERFUME</a>
+    </h1>
+    <a class="d-block d-md-none ml-auto mr-2 position-relative" href="#">
+      <span class="material-icons text-xl text-gray">shopping_cart</span>
+      <span
+        class="badge badge-pill badge-primary position-absolute"
+        style="top:-5px;right:-15px"
+      >
+        3
+      </span>
+    </a>
+    <button class="navbar-toggler py-2 px-3 ml-2 border-0" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="position-relative" style="height:40px; width:40px">
+        <span class="toggler-bar toggler-bar-top"></span>
+        <span class="toggler-bar toggler-bar-middle"></span>
+        <span class="toggler-bar toggler-bar-bottom"></span>
+      </div>      
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link h5 text-center py-3 py-md-2 mr-md-3" href="products.html">
+            <span class="material-icons d-none d-md-inline-block">store</span>
+            Product
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h5 text-center py-3 py-md-2 mr-md-3" href="login.html">
+            <span class="material-icons d-none d-md-inline-block">person</span>
+            log in
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link h5 text-center py-3 py-md-2 mr-md-3" href="#">
+            <span class="material-icons d-none d-md-inline-block">favorite</span>
+            Wishlist
+          </a>
+        </li>
+        <li class="nav-item d-block d-md-none">
+          <a class="nav-link h5 text-center py-3 py-md-2 mr-md-3" href="#">
+            Blog
+          </a>
+        </li>
+        <li class="nav-item d-block d-md-none">
+          <a class="nav-link h5 text-center py-3 py-md-2 mr-md-3" href="#">
+            Contact
+          </a>
+        </li>
+        <li class="nav-item d-none d-md-block">
+          <a class="nav-link h5 text-center py-3 py-md-2" href="#">
+            <span class="material-icons">shopping_cart</span>
+            Cart(3)
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+  <div class="bg-primary">
+  <ul class="container-lg d-none d-md-flex text-lg py-3 list-unstyled">
+      <li>
+          <a class="text-white pr-6 hover-opacity" href="#">CHANEL</a>
+      </li>
+      <li>
+          <a class="text-white pr-6 hover-opacity" href="#">Jo Malone</a>
+      </li>
+      <li>
+          <a class="text-white pr-6 hover-opacity" href="#">Curology</a>
+      </li>
+      <li>
+          <a class="text-white pr-6 hover-opacity" href="#">Dior</a>
+      </li>
+      <li>
+          <a class="text-white pr-6 hover-opacity" href="#">Chloe</a>
+      </li>
+      <li>
+          <a class="text-white pr-6 hover-opacity" href="#">ZARA</a>
+      </li>
+  </ul>
+</div>
+  
+
+  
+<main class="container pt-7 mb-7 mb-md-9">
+  <ul class="row list-unstyled">
+    <li class="col-6 col-md-3 mb-6 mb-md-9">
+      <div class="card border-0">
+        <a href="#" class="more__img bg-cover mb-2" style="background-image: url('assets/images/products1.jpg');"></a>
+        <div class="card-body p-0">
+          <h2 class="card-title text-xl mb-2">Poppy & Barley</h2>
+          <p class="card-text">Jo Malone</p>
+          <p class="card-text">NT$1,380
+            <del class="text-light text-through">NT$1,580</del>
+          </p>
+          <div class="d-flex mt-2">
+            <a href="#" class="mr-2" data-toggle="modal" data-target="#addLove">
+              <span class="material-icons text-lg text-primary align-center">favorite</span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#addToCart">
+              <span class="material-icons text-lg text-primary align-center">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-6 col-md-3 mb-6 mb-md-9">
+      <div class="card border-0">        
+        <a href="#" class="more__img bg-cover mb-2" 
+          style="background-image: url('assets/images/index6.jpg');background-position: center 100%;"></a>
+        <div class="card-body p-0">
+          <h2 class="card-title text-xl mb-2">Poppy & Barley</h2>
+          <p class="card-text">Jo Malone</p>
+          <p class="card-text">NT$1,380
+            <del class="text-light text-through">NT$1,580</del>
+          </p>
+          <div class="d-flex mt-2">
+            <a href="#" class="mr-2" data-toggle="modal" data-target="#addLove">
+              <span class="material-icons text-lg text-primary align-center">favorite</span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#addToCart">
+              <span class="material-icons text-lg text-primary align-center">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-6 col-md-3 mb-6 mb-md-9">
+      <div class="card border-0">
+        <a href="#" class="more__img bg-cover mb-2" 
+          style="background-image: url('assets/images/products3.jpg');background-position: center 35%;"></a>
+        <div class="card-body p-0">
+          <h2 class="card-title text-xl mb-2">Poppy & Barley</h2>
+          <p class="card-text">Jo Malone</p>
+          <p class="card-text">NT$1,380
+            <del class="text-light text-through">NT$1,580</del>
+          </p>
+          <div class="d-flex mt-2">
+            <a href="#" class="mr-2" data-toggle="modal" data-target="#addLove">
+              <span class="material-icons text-lg text-primary align-center">favorite</span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#addToCart">
+              <span class="material-icons text-lg text-primary align-center">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-6 col-md-3 mb-6 mb-md-9">
+      <div class="card border-0">
+        <a href="#" class="more__img bg-cover mb-2" 
+          style="background-image: url('assets/images/products4.jpg');background-position: center 30%;"></a>
+        <div class="card-body p-0">
+          <h2 class="card-title text-xl mb-2">Poppy & Barley</h2>
+          <p class="card-text">Jo Malone</p>
+          <p class="card-text">NT$1,380
+            <del class="text-light text-through">NT$1,580</del>
+          </p>
+          <div class="d-flex mt-2">
+            <a href="#" class="mr-2" data-toggle="modal" data-target="#addLove">
+              <span class="material-icons text-lg text-primary align-center">favorite</span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#addToCart">
+              <span class="material-icons text-lg text-primary align-center">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-6 col-md-3 mb-6 mb-md-9">
+      <div class="card border-0">
+        <a href="#" class="more__img bg-cover mb-2" 
+          style="background-image: url('assets/images/products5.jpg');background-position: center 35%;"></a>
+        <div class="card-body p-0">
+          <h2 class="card-title text-xl mb-2">Poppy & Barley</h2>
+          <p class="card-text">Jo Malone</p>
+          <p class="card-text">NT$1,380
+            <del class="text-light text-through">NT$1,580</del>
+          </p>
+          <div class="d-flex mt-2">
+            <a href="#" class="mr-2" data-toggle="modal" data-target="#addLove">
+              <span class="material-icons text-lg text-primary align-center">favorite</span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#addToCart">
+              <span class="material-icons text-lg text-primary align-center">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-6 col-md-3 mb-6 mb-md-9">
+      <div class="card border-0">
+        <a href="products-detail.html" class="more__img bg-cover mb-2" 
+          style="background-image: url('assets/images/index4.jpg');background-position: left center;"></a>
+        <div class="card-body p-0">
+          <h2 class="card-title text-xl mb-2">Poppy & Barley</h2>
+          <p class="card-text">Jo Malone</p>
+          <p class="card-text">NT$1,380
+            <del class="text-light text-through">NT$1,580</del>
+          </p>
+          <div class="d-flex mt-2">
+            <a href="#" class="mr-2" data-toggle="modal" data-target="#addLove">
+              <span class="material-icons text-lg text-primary align-center">favorite</span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#addToCart">
+              <span class="material-icons text-lg text-primary align-center">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-6 col-md-3 mb-6 mb-md-9">
+      <div class="card border-0">
+        <a href="#" class="more__img bg-cover mb-2" 
+          style="background-image: url('assets/images/products7.jpg');background-position: center 35%;"></a>
+        <div class="card-body p-0">
+          <h2 class="card-title text-xl mb-2">Poppy & Barley</h2>
+          <p class="card-text">Jo Malone</p>
+          <p class="card-text">NT$1,380
+            <del class="text-light text-through">NT$1,580</del>
+          </p>
+          <div class="d-flex mt-2">
+            <a href="#" class="mr-2" data-toggle="modal" data-target="#addLove">
+              <span class="material-icons text-lg text-primary align-center">favorite</span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#addToCart">
+              <span class="material-icons text-lg text-primary align-center">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-6 col-md-3 mb-6 mb-md-9">
+      <div class="card border-0">
+        <a href="#" class="more__img bg-cover mb-2" 
+          style="background-image: url('assets/images/products8.jpg');background-position: center 30%;"></a>
+        <div class="card-body p-0">
+          <h2 class="card-title text-xl mb-2">Poppy & Barley</h2>
+          <p class="card-text">Jo Malone</p>
+          <p class="card-text">NT$1,380
+            <del class="text-light text-through">NT$1,580</del>
+          </p>
+          <div class="d-flex mt-2">
+            <a href="#" class="mr-2" data-toggle="modal" data-target="#addLove">
+              <span class="material-icons text-lg text-primary align-center">favorite</span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#addToCart">
+              <span class="material-icons text-lg text-primary align-center">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-6 col-md-3 mb-6 mb-md-9">
+      <div class="card border-0">
+        <a href="#" class="more__img bg-cover mb-2" 
+          style="background-image: url('assets/images/index3.png');"></a>
+        <div class="card-body p-0">
+          <h2 class="card-title text-xl mb-2">Poppy & Barley</h2>
+          <p class="card-text">Jo Malone</p>
+          <p class="card-text">NT$1,380
+            <del class="text-light text-through">NT$1,580</del>
+          </p>
+          <div class="d-flex mt-2">
+            <a href="#" class="mr-2" data-toggle="modal" data-target="#addLove">
+              <span class="material-icons text-lg text-primary align-center">favorite</span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#addToCart">
+              <span class="material-icons text-lg text-primary align-center">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-6 col-md-3 mb-6 mb-md-9">
+      <div class="card border-0">
+        <a href="#" class="more__img bg-cover mb-2" 
+          style="background-image: url('assets/images/products10.jpg');background-position: left center;"></a>
+        <div class="card-body p-0">
+          <h2 class="card-title text-xl mb-2">Poppy & Barley</h2>
+          <p class="card-text">Jo Malone</p>
+          <p class="card-text">NT$1,380
+            <del class="text-light text-through">NT$1,580</del>
+          </p>
+          <div class="d-flex mt-2">
+            <a href="#" class="mr-2" data-toggle="modal" data-target="#addLove">
+              <span class="material-icons text-lg text-primary align-center">favorite</span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#addToCart">
+              <span class="material-icons text-lg text-primary align-center">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-6 col-md-3 mb-6 mb-md-9">
+      <div class="card border-0">
+        <a href="#" class="more__img bg-cover mb-2" 
+          style="background-image: url('assets/images/products11.jpg');background-position: center 35%;"></a>
+        <div class="card-body p-0">
+          <h2 class="card-title text-xl mb-2">Poppy & Barley</h2>
+          <p class="card-text">Jo Malone</p>
+          <p class="card-text">NT$1,380
+            <del class="text-light text-through">NT$1,580</del>
+          </p>
+          <div class="d-flex mt-2">
+            <a href="#" class="mr-2" data-toggle="modal" data-target="#addLove">
+              <span class="material-icons text-lg text-primary align-center">favorite</span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#addToCart">
+              <span class="material-icons text-lg text-primary align-center">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="col-6 col-md-3 mb-6 mb-md-9">
+      <div class="card border-0">
+        <a href="#" class="more__img bg-cover mb-2" 
+          style="background-image: url('assets/images/products12.jpg');background-position: center 30%;"></a>
+        <div class="card-body p-0">
+          <h2 class="card-title text-xl mb-2">Poppy & Barley</h2>
+          <p class="card-text">Jo Malone</p>
+          <p class="card-text">NT$1,380
+            <del class="text-light text-through">NT$1,580</del>
+          </p>
+          <div class="d-flex mt-2">
+            <a href="#" class="mr-2" data-toggle="modal" data-target="#addLove">
+              <span class="material-icons text-lg text-primary align-center">favorite</span>
+            </a>
+            <a href="#" data-toggle="modal" data-target="#addToCart">
+              <span class="material-icons text-lg text-primary align-center">shopping_cart</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <nav aria-label="Page navigation">
+    <ul class="pagination customPage justify-content-center mb-0">
+      <li class="page-item">
+        <a class="page-link text-lg active">1</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link text-lg" href="#">2</a>
+      </li>
+      <li class="page-item">
+        <a class="page-link  text-lg" href="#">3</a>
+      </li>
+    </ul>
+  </nav>
+</main>
+
+<!-- addToCart Modal -->
+<div class="modal fade" id="addToCart" tabindex="-1" role="dialog" aria-labelledby="addToCartTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered w-50 mx-auto" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close d-none d-md-block" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <text-lg class="text-lg text-primary font-weight-bold text-center" id="addToCartTitle">已加入購物車</text-lg>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- addLove Modal -->
+<div class="modal fade" id="addLove" tabindex="-1" role="dialog" aria-labelledby="addLoveTitle" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered w-50 mx-auto" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close d-none d-md-block" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h5 class="h5 text-primary font-weight-bold text-center" id="addLoveTitle">已加入我的收藏</h5>
+      </div>
+    </div>
+  </div>
+</div>
+
+  
+  <section class="subscribe bg-cover"
+  style="background-image: url('assets/images/index10.jpg'); height: 600px">
+  <div class="container">
+    <div class="row" data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+      <div class="col-12 col-md-4">
+        <h3 class="h2 font-weight-bold text-secondary mb-4">記得 <br>訂閱以獲取更多資訊！</h3>
+        <form>
+          <div class="input-group">
+            <input type="text" class="subscribe__input form-control p-3 h-100" placeholder="Your email address" aria-label="Your email address">
+            <div class="input-group-append">
+              <button type="submit" class="subscribe__btn btn btn-primary px-5">Subscribe</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+  
+
+  <footer class="bg-primary py-4">
+  <div class="container-fluild container-lg d-flex">
+    <div class="d-flex align-items-center">
+      <a href="#">
+        <img src="./assets/images/d’Perfumewhite.png" alt="logo">
+      </a>
+      <p class="text-white font-size-sm ml-4">© 2020. All Rights Reserved.</p>
+    </div>
+    <ul class="nav ml-auto d-none d-md-flex"> 
+      <li class="nav-item"><a href="products.html" class="nav-link text-white h5">Product</a></li>
+      <li class="nav-item"><a href="#" class="nav-link text-white h5">Blog</a></li>
+      <li class="nav-item"><a href="#" class="nav-link text-white h5">Contact</a></li>
+    </ul>
+  </div>
+</footer>
+
+  
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>

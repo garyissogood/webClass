@@ -1,0 +1,40 @@
+---
+title: D'Perfume | 登入會員
+loginandmember: log in
+navbrand: false
+subscribe: false
+layout: ./app/layout.ejs
+engine: ejs
+current: index
+---
+
+<main class="container pt-7 pb-9 mb-4">
+  <div class="row">
+    <div class="col-md-8 mb-1 mb-md-0">
+      <div class="bg-cover scale__img" style="background-image: url('assets/images/login1.jpg');"></div>
+    </div>
+    <div class="col-md-4 d-flex flex-column justify-content-center mt-5 mt-md-0">
+      <h2 class="text-3xl font-weight-bold mb-3">Log in</h2>
+      <form>
+        <div class="form-group">
+          <label for="user-account">帳號</label>
+          <input type="text" class="form-control" id="user-account"
+            aria-describedby="user-account" placeholder="email@example.com" required>
+          <div class="invalid-feedback">請輸入帳號</div>
+        </div>
+        <div class="form-group">
+          <label for="user-password">密碼</label>
+          <input type="password" class="form-control" id="user-password" placeholder="Password" required>
+          <div class="invalid-feedback">請輸入密碼</div>
+        </div>
+        <div class="d-flex justify-content-between align-items-center">
+          <a href="#" class="text-primary mt-4">忘記密碼</a>
+          <div class="mt-4">
+            <button type="button" class="btn btn-outline-primary mr-2">註冊</button>
+            <button type="submit" class="btn btn-primary" onclick="location.href='member.html';">登入</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</main>

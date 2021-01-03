@@ -1,0 +1,13 @@
+
+.customPage{
+  .page-link{
+    color: $dark;
+    border: none;
+    &.active , &:hover{
+        color:  $primary;
+        text-decoration: underline  !important;
+    }  
+  }
+}
+
+

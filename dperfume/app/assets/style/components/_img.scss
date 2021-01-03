@@ -1,0 +1,54 @@
+
+
+// scale 圖片比例
+.scale {
+	//正方
+	&__img {
+		padding-top: 100%;
+	}
+	//長方
+	&__img-lg {
+		padding-top: 150%;
+	}
+	//超長
+	&__img-xl {
+		padding-top: 195%;
+	}
+}
+
+
+
+// 圖片滑入出現連結文字
+.more__img {
+  padding-top: 100%;
+  position: relative;
+  &:before {
+    content: '查看更多';
+    position: absolute;
+    color: #fff;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .4s;
+    z-index: 1;
+  }
+  &:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(#000, .7);
+    opacity: 0;
+    transition: .2s;
+    z-index: 0;
+  }
+  &:hover:before,&:hover:after {
+    opacity: 1;
+  }
+  &:hover:before {
+    top: 55%;
+  }
+}

@@ -1,0 +1,27 @@
+
+// hover opacity | filter-brightnress | transform-y | cursor
+.hover{
+	&-opacity{
+			opacity: 1;
+			&:hover{
+					opacity: 0.5;
+			}
+	}
+	&-filter-brightnress{
+			transition: all .5s;
+			&:hover{
+					filter: brightness(70%);
+			}
+	}
+	&-transform-y{
+			transition: all .5s;
+			&:hover{
+					transform: translateY(-10px);
+			}
+	}
+	&-cursor{
+			&:hover{
+					cursor: pointer;
+			}
+	}
+}

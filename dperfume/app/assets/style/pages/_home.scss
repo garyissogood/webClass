@@ -1,0 +1,9 @@
+.banner{
+    height: calc(100vh - 56px);
+    transition: .5s;
+    @include media-max(sm) {
+        height: 480px
+    }
+}
+
+

@@ -1,0 +1,35 @@
+// bootstrap
+@import "../../../node_modules/bootstrap/scss/functions";
+@import "helpers/variables";
+@import "../../../node_modules/bootstrap/scss/mixins";
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+
+// helpers
+@import 'helpers/mixins';
+@import 'helpers/extend';
+
+
+// base
+@import "base/base";
+
+// components
+@import "components/hover";
+@import "components/button";
+@import "components/img";
+@import "components/card";
+@import "components/pagination";
+
+
+// layout
+@import "layout/navbar";
+@import "layout/custom";
+
+// pages
+@import "pages/home";
+
+
+
+
+
+
